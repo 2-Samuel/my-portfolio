@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Njoroge — Web Developer & UI/UX Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" id="home">
+        <div class="container nav-inner">
+            <a href="#home" class="logo" aria-label="Samuel Njoroge home">
+                <span class="logo-mark">SN</span>
+                <span class="logo-name">Samuel Njoroge</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav-links" aria-label="Primary">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn-cv">
+                    Download CV
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m0 0l-4-4m4 4l4-4M5 20h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <button type="button" class="theme-btn" aria-label="Appearance">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 14.3A8.5 8.5 0 1 1 9.7 3 7 7 0 0 0 21 14.3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="section-label">Hello, I'm</p>
+                    <h1>Samuel <span>Njoroge</span></h1>
+                    <p class="hero-role">Web Developer &amp; UI/UX Designer</p>
+                    <p class="hero-text">I build modern, responsive and user-friendly digital experiences that help businesses grow.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            Hire Me
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">View My Work</a>
+                    </div>
+                    <div class="socials" aria-label="Social profiles">
+                        <a href="https://www.linkedin.com/" aria-label="LinkedIn" class="social">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.94 8.5H3.75V20h3.19V8.5zM5.34 4C4.3 4 3.5 4.8 3.5 5.8s.79 1.81 1.84 1.81 1.84-.8 1.84-1.81S6.38 4 5.34 4zM20.25 20h-3.18v-5.6c0-1.34-.03-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95V20H9.88V8.5h3.05v1.57h.04c.42-.8 1.46-1.65 3-1.65 3.21 0 3.8 2.11 3.8 4.86V20z"/></svg>
+                        </a>
+                        <a href="https://github.com/" aria-label="GitHub" class="social">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.84c.85 0 1.71.12 2.51.34 1.9-1.32 2.74-1.05 2.74-1.05.56 1.41.21 2.45.1 2.71.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+                        </a>
+                        <a href="https://x.com/" aria-label="X" class="social">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.2 3H20l-6.16 7.05L21 21h-5.5l-4.3-5.62L6.3 21H3.48l6.58-7.53L3 3h5.64l3.9 5.16L17.2 3zm-1.93 16.2h1.53L8.82 4.7H7.18l8.09 14.5z"/></svg>
+                        </a>
+                        <a href="https://instagram.com/" aria-label="Instagram" class="social">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9A4.5 4.5 0 0 1 16.5 21h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3zm0 1.7A2.8 2.8 0 0 0 4.7 7.5v9A2.8 2.8 0 0 0 7.5 19.3h9a2.8 2.8 0 0 0 2.8-2.8v-9a2.8 2.8 0 0 0-2.8-2.8h-9zM12 7.4A4.6 4.6 0 1 1 7.4 12 4.6 4.6 0 0 1 12 7.4zm0 1.7A2.9 2.9 0 1 0 14.9 12 2.9 2.9 0 0 0 12 9.1zm5.15-2.55a1.05 1.05 0 1 1-1.05 1.05 1.05 1.05 0 0 1 1.05-1.05z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <p class="handwritten handwritten-hero">Turning<br>Ideas into<br>Reality</p>
+                    <svg class="curve-arrow" viewBox="0 0 140 90" aria-hidden="true">
+                        <path d="M10 20 C 40 10, 90 10, 120 50" fill="none" stroke="#8B503A" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M108 42 l12 8 -14 6" fill="none" stroke="#8B503A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="portrait-wrap">
+                        <div class="peach-circle" aria-hidden="true"></div>
+                        <img src="images/profile 2.jpg" alt="Portrait of Samuel Njoroge, web developer and UI/UX designer">
+                    </div>
+                    <aside class="freelance-badge">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        <p>Available for<br><strong>Freelance Work</strong></p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats" aria-label="Career statistics">
+            <div class="container stats-grid">
+                <article>
+                    <p class="stat-number">3+</p>
+                    <p>Years Experience</p>
+                </article>
+                <article>
+                    <p class="stat-number">50+</p>
+                    <p>Projects Completed</p>
+                </article>
+                <article>
+                    <p class="stat-number">30+</p>
+                    <p>Happy Clients</p>
+                </article>
+                <article>
+                    <p class="stat-number">100%</p>
+                    <p>Client Satisfaction</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-label">Featured Projects</h2>
+                    <a href="#projects" class="view-all">
+                        View All Projects
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project-dashboard.jpg" alt="Dark analytics dashboard interface for a SaaS product">
+                        </div>
+                        <div class="project-body">
+                            <span class="badge">Web App</span>
+                            <h3>SaaS Dashboard</h3>
+                            <p>A powerful dashboard for managing users, analytics and content.</p>
+                            <div class="project-footer">
+                                <div class="tags">
+                                    <span>React</span>
+                                    <span>Tailwind</span>
+                                    <span>Node.js</span>
+                                </div>
+                                <a href="#contact" class="card-arrow" aria-label="View SaaS Dashboard">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project-mobile.jpg" alt="Smartphone screens showing a task manager mobile application">
+                        </div>
+                        <div class="project-body">
+                            <span class="badge">Mobile App</span>
+                            <h3>Task Manager App</h3>
+                            <p>A modern mobile app to organize your tasks efficiently.</p>
+                            <div class="project-footer">
+                                <div class="tags">
+                                    <span>Flutter</span>
+                                    <span>Firebase</span>
+                                    <span>Dart</span>
+                                </div>
+                                <a href="#contact" class="card-arrow" aria-label="View Task Manager App">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project-mobile.jpg" alt="Smartphone screens showing a task manager mobile application">
+                        </div>
+                        <div class="project-body">
+                            <span class="badge">Mobile App</span>
+                            <h3>Task Manager App</h3>
+                            <p>A modern mobile app to organize your tasks efficiently.</p>
+                            <div class="project-footer">
+                                <div class="tags">
+                                    <span>Flutter</span>
+                                    <span>Firebase</span>
+                                    <span>Dart</span>
+                                </div>
+                                <a href="#contact" class="card-arrow" aria-label="View Task Manager App">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project-ecommerce.jpg" alt="Fashion e-commerce website displayed on a storefront layout">
+                        </div>
+                        <div class="project-body">
+                            <span class="badge">Website</span>
+                            <h3>E-commerce Website</h3>
+                            <p>A fully responsive online store with a clean and modern design.</p>
+                            <div class="project-footer">
+                                <div class="tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <a href="#contact" class="card-arrow" aria-label="View E-commerce Website">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container about-grid">
+                <div class="about-photo">
+                    <div class="about-frame">
+                        <img src="images/profile 2.jpg" alt="Alex Carter standing in a professional portrait">
+                        <div class="exp-badge">
+                            <strong>2+</strong>
+                            <span>Years<br>Experience</span>
+                        </div>
+                    </div>
+                    <p class="signature">Samuel Njoroge</p>
+                </div>
+
+                <div class="about-copy">
+                    <h2 class="section-label">About Me</h2>
+                    <p>I'm Samuel Njoroge, a passionate web developer and UI/UX designer based in Nairobi. I love transforming ideas into beautiful and functional digital products. My goal is to create impactful digital solutions that help businesses grow and make a difference.</p>
+                    <blockquote>
+                        <p>“Design is not just what it looks like, but how it works.”</p>
+                        <cite>— Steve Jobs</cite>
+                    </blockquote>
+                </div>
+
+                <div class="skills" id="skills">
+                    <h2 class="section-label">My Skills</h2>
+                    <div class="skill">
+                        <div class="skill-header"><span>HTML</span><span>95%</span></div>
+                        <div class="progress"><div class="progress-bar html"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-header"><span>CSS</span><span>90%</span></div>
+                        <div class="progress"><div class="progress-bar css"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-header"><span>JavaScript</span><span>85%</span></div>
+                        <div class="progress"><div class="progress-bar js"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-header"><span>React</span><span>80%</span></div>
+                        <div class="progress"><div class="progress-bar react"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-header"><span>Node.js</span><span>75%</span></div>
+                        <div class="progress"><div class="progress-bar node"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-header"><span>Figma</span><span>90%</span></div>
+                        <div class="progress"><div class="progress-bar figma"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="section-label">My Services</h2>
+                <div class="services-grid">
+                    <article class="service-card card">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M4 6h16v10H4zM8 20h8M12 16v4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div>
+                            <h3>Web Development</h3>
+                            <p>Responsive and modern websites using the latest technologies.</p>
+                        </div>
+                        <span class="service-arrow" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                    </article>
+                    <article class="service-card card">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3zM12 12l8-4.5M12 12v9M12 12L4 7.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div>
+                            <h3>UI/UX Design</h3>
+                            <p>User-centered design for better experiences.</p>
+                        </div>
+                        <span class="service-arrow" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                    </article>
+                    <article class="service-card card">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><rect x="8" y="3" width="8" height="18" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M11 18.5h2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                        </div>
+                        <div>
+                            <h3>Mobile App Development</h3>
+                            <p>Cross-platform apps for iOS and Android.</p>
+                        </div>
+                        <span class="service-arrow" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                    </article>
+                    <article class="service-card card">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M19.4 13a7.5 7.5 0 0 0 .05-2l2.05-1.55-2-3.46-2.45.9a7.6 7.6 0 0 0-1.73-1L15 3H9l-.32 2.89a7.6 7.6 0 0 0-1.73 1l-2.45-.9-2 3.46L4.55 11a7.5 7.5 0 0 0 0 2l-2.05 1.55 2 3.46 2.45-.9c.53.42 1.11.76 1.73 1L9 21h6l.32-2.89c.62-.24 1.2-.58 1.73-1l2.45.9 2-3.46L19.4 13z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div>
+                            <h3>Website Maintenance</h3>
+                            <p>Keep your website secure, updated and running smoothly.</p>
+                        </div>
+                        <span class="service-arrow" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta-banner">
+                    <div class="cta-copy">
+                        <p class="section-label light">Let's Work Together</p>
+                        <h2>Have a project in mind?</h2>
+                        <p>I'd love to hear from you. Let's create something amazing together.</p>
+                        <a href="#contact" class="btn btn-primary">
+                            Get In Touch
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </div>
+                    <p class="handwritten handwritten-cta">Dream<br>Plan<br>Build<br>Together</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <h2 class="section-label">Testimonials</h2>
+                <p class="section-title">What My Clients Say</p>
+                <div class="testimonials-grid">
+                    <article class="testimonial-card card">
+                        <div class="testimonial-top">
+                            <img src="images/testimonial-1.jpg" alt="Portrait of Sarah Johnson">
+                            <div class="stars" aria-label="5 out of 5 stars">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.5l2.5 5.1 5.6.8-4 4 1 5.6L12 16.3 6.9 19l1-5.6-4-4 5.6-.8L12 3.5z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.5l2.5 5.1 5.6.8-4 4 1 5.6L12 16.3 6.9 19l1-5.6-4-4 5.6-.8L12 3.5z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.5l2.5 5.1 5.6.8-4 4 1 5.6L12 16.3 6.9 19l1-5.6-4-4 5.6-.8L12 3.5z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.5l2.5 5.1 5.6.8-4 4 1 5.6L12 16.3 6.9 19l1-5.6-4-4 5.6-.8L12 3.5z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.5l2.5 5.1 5.6.8-4 4 1 5.6L12 16.3 6.9 19l1-5.6-4-4 5.6-.8L12 3.5z"/></svg>
+                            </div>
+                        </div>
+                        <p>Alex transformed our product dashboard into something our whole team actually enjoys using. Clear, fast, and beautifully designed.</p>
+                        <h3>Sarah Johnson</h3>
+                        <p class="role">CEO, BrightTech</p>
+                    </article>
+                    <article class="testimonial-card card">
+                        <div class="testimonial-top">
+                            <img src="images/testimonial-2.jpg" alt="Portrait of Michael Lee">
+                            <div class="stars" aria-label="5 out of 5 stars">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.5l2.5 5.1 5.6.8-4 4 1 5.6L12 16.3 6.9 19l1-5.6-4-4 5.6-.8L12 3.5z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.5l2.5 5.1 5.6.8-4 4 1 5.6L12 16.3 6.9 19l1-5.6-4-4 5.6-.8L12 3.5z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.5l2.5 5.1 5.6.8-4 4 1 5.6L12 16.3 6.9 19l1-5.6-4-4 5.6-.8L12 3.5z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.5l2.5 5.1 5.6.8-4 4 1 5.6L12 16.3 6.9 19l1-5.6-4-4 5.6-.8L12 3.5z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.5l2.5 5.1 5.6.8-4 4 1 5.6L12 16.3 6.9 19l1-5.6-4-4 5.6-.8L12 3.5z"/></svg>
+                            </div>
+                        </div>
+                        <p>From first sketch to launch, the process was smooth. The mobile app feels premium and our users noticed the difference immediately.</p>
+                        <h3>Michael Lee</h3>
+                        <p class="role">Founder, PixelApps</p>
+                    </article>
+                    <article class="testimonial-card card">
+                        <div class="testimonial-top">
+                            <img src="images/testimonial-3.jpg" alt="Portrait of Emily Davis">
+                            <div class="stars" aria-label="5 out of 5 stars">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.5l2.5 5.1 5.6.8-4 4 1 5.6L12 16.3 6.9 19l1-5.6-4-4 5.6-.8L12 3.5z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.5l2.5 5.1 5.6.8-4 4 1 5.6L12 16.3 6.9 19l1-5.6-4-4 5.6-.8L12 3.5z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.5l2.5 5.1 5.6.8-4 4 1 5.6L12 16.3 6.9 19l1-5.6-4-4 5.6-.8L12 3.5z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.5l2.5 5.1 5.6.8-4 4 1 5.6L12 16.3 6.9 19l1-5.6-4-4 5.6-.8L12 3.5z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.5l2.5 5.1 5.6.8-4 4 1 5.6L12 16.3 6.9 19l1-5.6-4-4 5.6-.8L12 3.5z"/></svg>
+                            </div>
+                        </div>
+                        <p>Our new store looks editorial and converts better. Alex understood the brand and delivered a site that feels truly high-end.</p>
+                        <h3>Emily Davis</h3>
+                        <p class="role">Marketing Director, Nova Studio</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-copy">
+                    <h2 class="section-label">Contact Me</h2>
+                    <p class="section-title">Let's Talk</p>
+                    <p>Have a question or want to work together? Feel free to reach out.</p>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4zM4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            <div>
+                                <span>Email</span>
+                                <a href="mailto:samuelnjoroge01000@gmail.com">samuelnjoroge01000@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M6.5 4.5h3l1.2 3-2 1.5a12 12 0 0 0 6.3 6.3l1.5-2 3 1.2v3A2 2 0 0 1 17.5 19.5 14 14 0 0 1 4.5 6.5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            <div>
+                                <span>Phone</span>
+                                <a href="tel:+245115001108">+245115001108</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="10" r="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+                            </span>
+                            <div>
+                                <span>Location</span>
+                                <p>Nairobi</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <form action="#" method="get">
+                    <label for="name">Your Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your Name" required autocomplete="name">
+
+                    <label for="email">Your Email</label>
+                    <input id="email" name="email" type="email" placeholder="Your Email" required autocomplete="email">
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+                    <button type="submit" class="btn btn-primary">
+                        Send Message
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a href="#home" class="logo">
+                <span class="logo-mark">SN</span>
+                <span class="logo-name">Samuel Njoroge</span>
+            </a>
+            <nav aria-label="Footer">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <p class="copyright">© 2025 Samuel Njoroge. All rights reserved.</p>
+            <p class="made-with">
+                Made with
+                <svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 20s-7.2-4.4-9.4-8.6C1 8.4 3.1 5 6.6 5c2 0 3.3 1.1 4.4 2.6C12.1 6.1 13.4 5 15.4 5 18.9 5 21 8.4 19.4 11.4 17.2 15.6 12 20 12 20z"/></svg>
+                for a better web
+            </p>
+            <a href="#home" class="back-to-top" aria-label="Back to top">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
